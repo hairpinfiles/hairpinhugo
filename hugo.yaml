@@ -1,0 +1,24 @@
+baseURL: 'https://hairpinfiles.pages.dev/'
+languageCode: en-us
+title: The Hairpin Files
+
+
+module:
+  mounts:
+  - source: content
+    target: content
+    excludeFiles:
+    - "_backstage/*"
+    - "_personal/*"
+  - source: static
+    target: static
+  - source: layouts
+    target: layouts
+  - source: data
+    target: data
+  - source: assets
+    target: assets
+  - source: i18n
+    target: i18n
+  - source: archetypes
+    target: archetypes
